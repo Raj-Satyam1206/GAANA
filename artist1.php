@@ -12,7 +12,33 @@
     <style>
         header .song_side::before {
             background: url('arjit_bg.png');
-            }
+        }
+
+        body {
+            background-image: url(img/artist_bg.jpg); 
+        }   
+        
+        header .song_side .abt {
+            width: 90%;
+            height: 30%;
+            /* border: 1px solid #fff; */
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        
+        header .song_side .abt h4 {
+            font-size: 20px;
+            font-weight: 300;
+            color: cyan;
+        }
+
+        header .song_side .abt p {
+            font-size: 15px;
+            font-weight: 300;
+            color: #4c5262;
+            margin: 5px;
+        }
     </style>
 </head>
 
@@ -190,7 +216,6 @@
             </div>
         </div>
 
-
         <div class="song_side">
             <nav>
                 <ul>
@@ -213,12 +238,12 @@
                     </div>
                 </div>
                 <div class="user">
-                    <img src="img/KDS CODER.png" alt="">
+                    <img src="profile_picture.svg" alt="">
                 </div>
             </nav>
             <div class="content">
                 <h1>Arjit Singh</h1>
-                <p>You were the shadow to my light did you feel us Another start you fade <br> Away afraid our aim is out of sight Wanna see us Alive</p>
+                <p>Iss jagah aa gayi chahatein ab meri <br> Cheen loonga tumhe saare duniya se hi <br> Tere ishq pe haan haq mera hi to hai <br> Keh diya hai ye maine mere Rabb se bhi</p>
                 <div class="buttons">
                     <button>PLAY</button>
                     <button>FOLLOW</button>
@@ -372,7 +397,8 @@
                     
                 </div>
             </div>
-            <div class="popular_artists">
+
+            <!-- <div class="popular_artists">
                 <div class="h4">
                     <h4>Popular Artists</h4>
                     <div class="btn_s">
@@ -427,9 +453,18 @@
                         <img src="img/arjit.jpg" alt="">
                     </li>
                 </div>
+            </div> -->
+
+            <div class="abt">
+                <h4>Arjit Singh</h4>
+                <p>Arjit Singh (born 25 April 1987) is an Indian playback singer and music composer.[6][4][2] The recipient of several accolades including a National Film Award and seven Filmfare Awards, he has recorded songs in several Indian languages, predominantly Hindi and Bengali.
+
+                Singh began his career when he participated in the contemporary reality show Fame Gurukul in 2005. Singh made his Hindi cinema debut in 2013 with the song "Phir Mohabbat" along with Saim Bhatt and Mohammad Irfan Khan composed by Mithoon for the film Murder 2 although the song was recorded in 2009. The same year he had popular songs like "Raabta" from Agent Vinod, "Uska Hi Banana" from 1920: Evil Returns and "Duaa" from Shanghai.
+
+                He received widespread recognition with the release of successful tracks "Tum Hi Ho" and "Chahun Main Ya Naa" from Aashique 2 in 2013.[7][8][9][10] He was declared the most-streamed Indian artist of 2020, 2021 and 2022 by Spotify. He is the 3rd most followed artist globally and the most followed Asian on Spotify</p>
+
             </div>
         </div>
-
 
 
         <div class="master_play">
@@ -438,10 +473,10 @@
                 <div class="wave1"></div>
                 <div class="wave1"></div>
             </div>
-            <img src="img/20.jpg" alt="" id="poster_master_play">
+            <img src="img/arjit/21.jpg" alt="" id="poster_master_play">
             <h5 id="title">
-                Vande mataram
-                <div class="subtitle">Bankim Chandra</div>
+                Channa Mereya
+                <div class="subtitle">Arjit Singh, Pritam</div>
             </h5>
             <div class="icon">
                 <i class="bi shuffle bi-music-note-beamed">next</i>

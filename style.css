@@ -14,7 +14,7 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100vh;
-    background: #121213;
+    background-image: url(img/artist_bg.jpg);
     display: grid;
     place-items: center;
 }
@@ -37,15 +37,11 @@ header .menu_side,
     background: #111727;
     box-shadow: 5px 0px 2px #090f1f;
     color: #fff;
-    transition: 1s linear;
 }
 
 header .song_side {
     width: 75%;
     background: #0b1320;
-}
-header .menu_side h6 {
-display: none;
 }
 header .master_play {
     width: 100%;
@@ -75,7 +71,6 @@ header .menu_side .playlist h4 {
     align-items: center;
     transition: .3s linear;
 }
-
 /* The CSS rule cursor: pointer; is used to change the cursor icon to a hand pointer when the mouse pointer is over an element. This is commonly used to indicate that an element, such as a button or a link, is interactive and can be clicked or interacted with. */
 
 /* The CSS rule transition: 0.3s linear; is used to specify the timing function and duration of CSS transitions. Transitions are used to smoothly animate changes in CSS properties (e.g., changing the color, size, or position of an element) over a specified duration.
@@ -84,8 +79,9 @@ header .menu_side .playlist h4 {
 
 linear is the timing function for the transition. In this case, it uses a linear timing function, which means that the property changes will occur at a constant rate throughout the transition, resulting in a uniform and consistent animation. */
 
-
-
+header .menu_side h6 {
+    display: none;
+}
 header .menu_side .playlist h4:hover {
     color: #fff;
 }
@@ -111,7 +107,6 @@ header .menu_side .playlist h4:hover span::before {
 }
 
 /* The CSS selector span::before is used to target and style the content that is inserted before the content of a span element. This is often used in conjunction with the CSS pseudo-element ::before to create generated content or add decorative elements before the actual content of an HTML element. */
-
 
 
 header .menu_side .playlist h4 .bi {
@@ -225,7 +220,6 @@ header .master_play .wave .wave1:nth-child(3) {
     height: 8px;
     animation-delay: .8s;
 }
-
 
 /* javascript classes */
 
@@ -416,7 +410,7 @@ header .master_play .vol .vol_bar {
     width: 100%;
     height: 100%;
     top: 0;
-    transition: 1s linear
+    transition: 1s linear;
 }
 
 header .master_play .vol .dot {
@@ -454,7 +448,6 @@ header .song_side::before {
     background: url('bg.png');
     z-index: -1;
 }
-
 /* .header .song_side::before { ... }: Uses the ::before pseudo-element to insert a generated content box before the content of elements with the class song_side that are descendants of elements with the class header.
 
 content: '';: Generates an empty content box. This is often used when you want to create a pseudo-element purely for styling purposes.

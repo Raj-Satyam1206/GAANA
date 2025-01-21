@@ -15,7 +15,7 @@
     <header>
         <div class="menu_side">
             <h6 id="menu_list_active_button"><i class="bi bi-music-note-list"></i></h6>
-            <h1>Playlist</h1>
+            <h1>BassRize</h1>
             <div class="playlist">
                 <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Playlist</h4>
                 <h4><span></span><i class="bi bi-music-note-beamed"></i> Last Listening</h4>
@@ -208,7 +208,7 @@
                     </div>
                 </div>
                 <div class="user">
-                    <img src="img/KDS CODER.png" alt="">
+                    <img src="profile_picture.svg" alt="">
                 </div>
             </nav>
             <div class="content">
@@ -363,10 +363,10 @@
                         <h5>On My Way<br>
                             <div class="subtitle">Alan Walker</div>
                         </h5>
-                    </li>
-                    
+                    </li>   
                 </div>
             </div>
+            
             <div class="popular_artists">
                 <div class="h4">
                     <h4>Popular Artists</h4>
@@ -380,34 +380,34 @@
                         <a href="artist1.php"><img src="img/arjit.jpg" alt=""></a>
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/atif.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/akhil.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/alan.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/dhvani.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/Diljit.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/guru.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/honey.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/jubin.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/justin.jpg" alt="">
                     </li>
                     <li>
-                        <img src="img/arjit.jpg" alt="">
+                        <img src="img/neha.jpg" alt="">
                     </li>
                     <li>
                         <img src="img/arjit.jpg" alt="">
@@ -433,10 +433,10 @@
                 <div class="wave1"></div>
                 <div class="wave1"></div>
             </div>
-            <img src="img/20.jpg" alt="" id="poster_master_play">
+            <img src="img/9.jpg" alt="" id="poster_master_play">
             <h5 id="title">
-                Vande mataram
-                <div class="subtitle">Bankim Chandra</div>
+                Dilbar
+                <div class="subtitle">Satyameva Jayate</div>
             </h5>
             <div class="icon">
                 <i class="bi shuffle bi-music-note-beamed">next</i>
@@ -462,6 +462,20 @@
 
     </header>
     <script src="app.js"></script>
-</body>
+    <script>
+        let menu_list_active_button = document.getElementById('menu_list_active_button');
+        let menu_side = document.getElementsByClassName('menu_side')[0];
 
+        menu_list_active_button.addEventListener('click' , () => {
+        menu_side.style.transform = "unset";
+        menu_list_active_button.style.opacity = 0;
+        })
+
+        let song_side = document.getElementsByClassName('song_side')[0];
+        song_side.addEventListener('click' , () => {
+            // menu_side.style.transform = "translateX(-100%)";
+            menu_list_active_button.style.opacity = 1;
+        })
+    </script>
+</body>
 </html>
